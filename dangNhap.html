@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Đăng Nhập</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        height: 90vh;
+        width: 90vw;
+      }
+
+      .form-login {
+        width: 40%;
+        padding: 50px;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      .form-login input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #0036ff;
+        color: white;
+        padding: 14px;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0047d3;
+      }
+
+      .back-link {
+        font-size: 14px;
+        color: #0066ff;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+
+      .forgot-password,
+      .register-link {
+        color: #0066ff;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+
+      .advertisement {
+        width: 60%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .advertisement img {
+        width: 100%;
+        height: 110%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-login">
+        <a href="#" class="back-link">&lt; Quay lại Trang chủ</a>
+        <h1>Đăng nhập</h1>
+        <form>
+          <label for="email">Email đăng nhập:</label><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Vui lòng nhập email"
+          /><br />
+
+          <label for="password">Mật khẩu:</label><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Vui lòng nhập mật khẩu"
+          /><br />
+
+          <button type="submit">Đăng nhập</button>
+        </form>
+        <a href="#" class="forgot-password">Quên mật khẩu</a><br />
+        <a href="#" class="register-link">Bạn chưa có tài khoản Đăng ký</a>
+      </div>
+
+      <div class="advertisement">
+        <img src="userlogin1.png" alt="Advertisement" />
+      </div>
+    </div>
+  </body>
+</html>
